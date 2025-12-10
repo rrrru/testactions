@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show gh version
-        run: gh --version
+        run: |
+          gh --version
+          df -h
