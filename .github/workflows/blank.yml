@@ -22,4 +22,7 @@ jobs:
         run: |
           gh --version
           df -h
+          dd if=/dev/zero of=20gb.img bs=1 count=0 seek=20G
+          echo "check"
+          df -h
           
