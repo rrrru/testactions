@@ -1,0 +1,11 @@
+name: GH Version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show gh version
+        run: gh --version
